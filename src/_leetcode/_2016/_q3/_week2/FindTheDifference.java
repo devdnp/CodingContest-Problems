@@ -1,4 +1,4 @@
-package _2016._q3._week2;
+package _leetcode._2016._q3._week2;
 //#389
 import java.util.Arrays;
 

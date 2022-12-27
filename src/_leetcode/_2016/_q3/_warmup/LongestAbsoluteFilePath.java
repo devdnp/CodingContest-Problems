@@ -1,4 +1,4 @@
-package _2016._q3._warmup;
+package _leetcode._2016._q3._warmup;
 //#388
 public class LongestAbsoluteFilePath {
     public static void main(String[] args) {

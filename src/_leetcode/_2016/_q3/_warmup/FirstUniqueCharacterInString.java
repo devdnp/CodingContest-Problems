@@ -1,4 +1,4 @@
-package _2016._q3._warmup;
+package _leetcode._2016._q3._warmup;
 //#387
 import java.util.HashMap;
 import java.util.Map;
