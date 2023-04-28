@@ -10,15 +10,21 @@ public class ClosestPrimeNumbersInRange {
     }
 
     static int[] closestPrimes(int left, int right) {
-        var primes = sieveOfEratosthenes(right);
+        final boolean[] primes = sieveOfEratosthenes(right);
         PriorityQueue<Integer> pq = new PriorityQueue<>();
-        if(left <= 1) left = 2;
+        if(left <= 1)
+            left = 2;
+
         for(int i = left; i <= right; i++) {
-            if(primes[i]) pq.add(i);
+            if(primes[i])
+                pq.add(i);
         }
-        if(pq.isEmpty()) return new int[]{-1,-1};
+        if(pq.isEmpty())
+            return new int[]{-1,-1};
+
         int l = -1,r = -1,diff = 999999;
         int s1 = pq.poll();
+
         while(!pq.isEmpty()) {
             int s2 = pq.poll();
             if(s2 - s1 < diff) {
@@ -30,6 +36,8 @@ public class ClosestPrimeNumbersInRange {
         }
         return new int[]{l,r};
     }
+
+    //an ancient algorithm for finding all prime numbers up to any given limit
     static boolean[] sieveOfEratosthenes(int n) {
         boolean prime[] = new boolean[n + 1];
         for (int i = 0; i <= n; i++)
