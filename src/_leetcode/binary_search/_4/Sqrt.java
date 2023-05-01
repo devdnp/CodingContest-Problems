@@ -2,7 +2,6 @@ package _leetcode.binary_search._4;
 ////Binary-Search Day-4 Problem-1
 //#69
 public class Sqrt {
-
     public static void main(String[] args) {
         int x = 8;
         System.out.println(mySqrt(x));
