@@ -6,7 +6,7 @@ import java.util.*;
 public class FindKClosestElements {
     public static void main(String[] args) {
         int[]  input = {1,2,3,4,5};
-        int k = 4, x = 3;
+        int k = 4, x = -1;//3;
         System.out.println(findClosestElements(input,k,x));
     }
 
